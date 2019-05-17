@@ -2,7 +2,7 @@ class MyFetchRequest {
 
  async get(url){
    const response = await fetch(url);
-   const resData = await response.text();
+   const resData = await response.json();
    return resData;
  }
 }
