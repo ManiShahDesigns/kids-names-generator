@@ -39,7 +39,7 @@ function girlsNames(randomId){
 
 // Get boys names 
 function boysNames(randomId){
-  request.get('../json/boy.json')
+  request.get('kids-names-generator/json/boy.json')
   .then(data => 
     names.innerHTML =
     `${data.names[randomId]}`
