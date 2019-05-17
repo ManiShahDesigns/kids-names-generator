@@ -29,7 +29,7 @@ function messageFunction(){
 
 // Get girls names 
 function girlsNames(randomId){
-  request.get('../json/girl.json')
+  request.get('./json/girl.json')
   .then(data => 
     names.innerHTML =
     `${data.names[randomId]}`
@@ -39,7 +39,7 @@ function girlsNames(randomId){
 
 // Get boys names 
 function boysNames(randomId){
-  request.get('../json/boy.json')
+  request.get('./json/boy.json')
   .then(data => 
     names.innerHTML =
     `${data.names[randomId]}`
